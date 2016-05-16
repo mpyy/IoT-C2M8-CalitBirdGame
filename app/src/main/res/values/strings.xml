@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">C2M8 Calit Bird</string>
+    <string name="game_over">CaliBird has fallen. Would you like to play again?</string>
+    <string name="restart">Revive CaliBird</string>
+    <string name="score">Score: </string>
+    <string name="scoreLabel">"Score: "</string>
+</resources>
