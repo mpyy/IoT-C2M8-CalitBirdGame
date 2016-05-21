@@ -2,6 +2,7 @@ package com.example.matias.c2m8calitbird;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,8 +37,27 @@ public class CaliBirdActivity extends AppCompatActivity {
         this.inputter = new ScreenInput();
     }
 
+    /**
+     * Handles pressing keys on a hardware keyboard
+     * @param keyCode   The code of the key pressed
+     * @param event     Reference to the KeyEvent
+     * @return          Returns true, or if the key press is not handled by this implementation,
+     *                  returns the value from the call to the superclass
+     * Created by matias on 21.5.2016.
+     */
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_SPACE:
+                setInput(this.findViewById(R.id.layout));
+                return true;
+            default:
+                return super.onKeyUp(keyCode, event);
+        }
+    }
 
 /*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

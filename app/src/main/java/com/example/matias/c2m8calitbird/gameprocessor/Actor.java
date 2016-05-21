@@ -67,7 +67,6 @@ public abstract class Actor {
         return (location.getX() >= 0);
     }
 
-
     /**
      * Name:        incrementX
      * Description: Increments/moves the X coordinate by 1

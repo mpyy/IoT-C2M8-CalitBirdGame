@@ -53,6 +53,7 @@ public class Map {
         // Populates the Map with empty spaces
         for(int i = 0; i < WIDTH; i++) {
             for(int j = 0; j < HEIGHT; j++) {
+                // TODO: Width and height could be the wrong way -- test with WIDTH <> HEIGHT
                 map[i][j] = EMPTY;
             }
         }
